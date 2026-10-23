@@ -1,0 +1,55 @@
+{
+  "checked_date": "2026-10-29",
+  "scope": "Current distributable package integrity and validation. Numerical reproduction is documented separately in release_check_2026-10-23.json.",
+  "archives": [
+    {
+      "file": "ku_pcpe_annotations_1.0.0-rc.2.tar.gz",
+      "bytes": 38764844,
+      "sha256": "fd5f4bfa0276017367ff129ca19108e218240bfa094bb04748222d4faef8c584",
+      "root": "release_candidate_v1.0.0-rc.2"
+    },
+    {
+      "file": "ku_pcpe_replay_1.0.0-rc.2.tar.gz",
+      "bytes": 32090712,
+      "sha256": "854196a7e6b73807092f41028871122f8c51911bf6b811db4aba377fffbb7380",
+      "root": "replay_bundle_v1.0.0-rc.2"
+    },
+    {
+      "file": "kupcp_completed_public_20261023_v1.tar.gz",
+      "bytes": 72839504,
+      "sha256": "c4fa7276b84a4d7f8829aa1eb3e95f5b1a050059197325c7c5c12e24b07aa844",
+      "root": "kupcp_completed_public_20261023_v1",
+      "schema": "kupcp_public_annotations_v1",
+      "role": "Primary KU-PCPE dataset: all annotations and sanitized study metadata",
+      "annotations": 8074,
+      "completed_annotator_split_sets": 4,
+      "source_photographs_included": false
+    }
+  ],
+  "evaluator_integrity_manifest": "configs/evaluator_sha256.json",
+  "evaluator_files_verified": 9,
+  "research_payloads_match_numerical_reproduction": true,
+  "website_download_sha256": {
+    "paper.pdf": "e0b093f1dd19c85bc416adc6149dea9bf6617c0430e4bb22f402b03277c78921",
+    "supplement.pdf": "83ac45bf784bc33cd0363bae5b14e50383ca8f3f39ab9076f34e66742e68e14a"
+  },
+  "main_body_pages": 8,
+  "main_total_pages": 10,
+  "supplement_pages": 23,
+  "cpu_tests_passed": 52,
+  "static_page_checks": "PASS",
+  "synthetic_smoke_test": "PASS",
+  "replay_validation": {
+    "status": "PASS",
+    "files": 3992,
+    "privacy_files": 3993
+  },
+  "annotation_validation": {
+    "status": "PASS",
+    "train_tasks": 4093,
+    "expert_test_tasks": 1327,
+    "identity_Dice": 1.0
+  },
+  "status": "PASS",
+  "website_downloads_checked_date": "2026-10-30"
+}

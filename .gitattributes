@@ -1,0 +1,4 @@
+*.tar.gz binary
+*.png binary
+*.pdf binary
+*.csv -text whitespace=cr-at-eol

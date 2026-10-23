@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KU-PCP Elements links nine labels for photographic composition to regions selected by people. Compare annotations from three experts and explore the benchmark results.">
+
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="KU-PCP Elements | WACV 2027">
+  <meta property="og:description" content="Regions selected by people to explain nine labels for photographic composition. WACV 2027.">
+  <title>KU-PCP Elements | WACV 2027</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="assets/examples/horizontal-typical.webp">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<svg class="symbol-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+  <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+  <symbol id="icon-paper" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+  <symbol id="icon-center" viewBox="0 0 24 24"><path d="M3 8V3h5m8 0h5v5m0 8v5h-5M8 21H3v-5"/><circle cx="12" cy="12" r="4"/></symbol>
+  <symbol id="icon-rule_of_thirds" viewBox="0 0 24 24"><path d="M8 3v18M16 3v18M3 8h18M3 16h18"/><circle cx="8" cy="8" r="2"/></symbol>
+  <symbol id="icon-symmetric" viewBox="0 0 24 24"><path d="M12 2v20M8 5 3 12l5 7m8-14 5 7-5 7"/></symbol>
+  <symbol id="icon-horizontal" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="icon-vertical" viewBox="0 0 24 24"><path d="M7 3v18M12 3v18M17 3v18"/></symbol>
+  <symbol id="icon-diagonal" viewBox="0 0 24 24"><path d="M3 17 17 3M7 21 21 7"/></symbol>
+  <symbol id="icon-curved" viewBox="0 0 24 24"><path d="M4 20c0-12 16-4 16-16M4 4c0 12 16 4 16 16"/></symbol>
+  <symbol id="icon-triangle" viewBox="0 0 24 24"><path d="m12 3 10 18H2Z"/></symbol>
+  <symbol id="icon-pattern" viewBox="0 0 24 24"><path d="M3 3h5v5H3zm13 0h5v5h-5zM3 16h5v5H3zm13 0h5v5h-5zM10 10h4v4h-4z"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav-shell" aria-label="Main navigation">
+    <a class="wordmark" href="#top" aria-label="KU-PCP Elements home"><span>KU-PCP Elements</span></a>
+    <div class="nav-links"><a href="#explore">Examples</a><a href="#dataset">Dataset</a><a href="#benchmark">Results</a><a href="#resources">Resources</a></div>
+    <a class="nav-paper" href="assets/downloads/paper.pdf" target="_blank" rel="noopener">Read the paper <svg><use href="#icon-arrow"/></svg></a>
+  </nav>
+</header>
+<main id="main">
+<section class="research-header section-shell" id="top" aria-labelledby="hero-title">
+  <p class="venue">WACV 2027 <span>Evaluations &amp; Datasets</span></p>
+  <h1 id="hero-title">Grounding Image Composition <br>with Label-Conditioned Visual Evidence</h1>
+  <p class="project-name">KU-PCP Elements (KU-PCPE)</p>
+  <p class="author-line">Armin Dadras<sup>1,2</sup><span>·</span>Tingyu Lin<sup>1</sup><span>·</span>Robert Sablatnig<sup>1</sup><span>·</span>Franziska Proksa<sup>2</sup><span>·</span>Markus Seidl<sup>2</sup></p>
+  <p class="affiliation-line"><span><sup>1</sup>Computer Vision Lab, TU Wien</span><span><sup>2</sup>UAS St. Pölten</span></p>
+  <div class="paper-actions">
+    <a class="button button-dark" href="assets/downloads/paper.pdf" target="_blank" rel="noopener"><svg><use href="#icon-paper"/></svg>Paper</a>
+    <a class="button button-outline" href="assets/downloads/supplement.pdf" target="_blank" rel="noopener"><svg><use href="#icon-paper"/></svg>Supplement</a>
+    <a class="button button-outline" href="https://github.com/ADadras/ku-pcpe" target="_blank" rel="noopener"><svg><use href="#icon-code"/></svg>Code</a>
+    <a class="button button-outline" href="#dataset-download"><svg><use href="#icon-down"/></svg>Dataset</a>
+  </div>
+  <div class="teaser" aria-label="Example of regions that support a composition label">
+    <div class="teaser-toolbar"><span>One image, one composition label</span><div class="segmented" role="group" aria-label="Overview example"><button type="button" data-teaser-class="horizontal" aria-pressed="true">Horizontal</button><button type="button" data-teaser-class="triangle" aria-pressed="false">Triangle</button><button type="button" data-teaser-class="symmetric" aria-pressed="false">Symmetric</button></div></div>
+    <div class="teaser-pair">
+      <figure><div class="teaser-image"><img id="teaser-original" src="assets/examples/horizontal-typical.webp" width="1024" height="720" alt="A KU-PCP photograph with the queried label Horizontal." fetchpriority="high"></div><figcaption>Image and queried label: <b id="teaser-class-name">Horizontal</b></figcaption></figure>
+      <figure><div class="teaser-image"><img id="teaser-photo" src="assets/examples/horizontal-typical.webp" width="1024" height="720" alt="The same photograph, with regions selected by the experts shown in blue."><img id="hero-mask" class="teaser-mask" src="assets/examples/horizontal-typical-aligned.png" width="1024" height="720" alt="" aria-hidden="true"><button id="hero-reveal" type="button" aria-pressed="true">Hide annotation</button></div><figcaption><span class="legend-dot"></span><span id="teaser-mask-caption">Consensus after alignment</span></figcaption></figure>
+    </div>
+    <p class="teaser-caption">Each task pairs a photograph with a composition label that applies to it. Annotators mark the visible regions that support the label. Blue shows their consensus after accounting for complementary selections.</p>
+  </div>
+</section>
+<section class="stats-band" aria-label="Dataset at a glance"><div class="section-shell stat-grid">
+  <div><strong>4,242</strong><span>images</span></div><div><strong>5,420</strong><span>annotation tasks</span></div><div><strong>8,074</strong><span>human masks</span></div><div><strong>9</strong><span>composition classes</span></div>
+</div></section>
+<section class="overview-section section-shell" aria-labelledby="overview-title"><h2 id="overview-title">Overview</h2><p>Composition labels describe an image as a whole, but do not identify the regions that support the judgment. KU-PCP Elements extends KU-PCP by asking people to mark these regions for nine composition classes. One annotator supplies masks for training. Three other experts independently annotate every task in the test set. We retain their individual masks and derive two consensus masks for evaluation. Researchers can use these annotations to train models that predict relevant regions or select from proposed regions.</p></section>
+<section class="explorer-section section-shell" id="explore" aria-labelledby="explore-title">
+  <div class="section-heading"><div><p class="eyebrow"><span class="section-number">01</span> Examples</p><h2 id="explore-title">Annotation examples</h2></div><p>Select a class and compare the experts. <br>Typical and ambiguous examples come from the paper.</p></div>
+  <div class="explorer-layout">
+    <div class="class-picker" id="class-picker" role="group" aria-label="Composition class"></div>
+    <div class="explorer-main">
+      <div class="explorer-toolbar"><div class="segmented" role="group" aria-label="Example type"><button type="button" data-case="typical" aria-pressed="true">Typical</button><button type="button" data-case="ambiguous" aria-pressed="false">Ambiguous</button></div><span class="image-counter" id="example-task">Example from the paper</span></div>
+      <div class="image-comparison" id="comparison" style="--reveal:52%">
+        <img id="example-image" src="assets/examples/horizontal-typical.webp" width="1024" height="720" alt="Horizontal composition, typical paper example.">
+        <div class="comparison-mask" id="comparison-mask"><img id="example-mask" src="assets/examples/horizontal-typical-aligned.png" width="1024" height="720" alt="" aria-hidden="true"></div>
+        <span class="comparison-label comparison-label-original">Photograph</span><span class="comparison-label comparison-label-mask" id="mask-label">Aligned consensus</span>
+        <span class="comparison-line" aria-hidden="true"><span>‹ ›</span></span>
+        <input id="reveal-slider" type="range" min="0" max="100" value="52" aria-label="Reveal annotation overlay" aria-valuetext="52 percent of the photograph shown without annotation">
+      </div>
+      <div class="overlay-picker" role="group" aria-label="Annotation view"><span class="overlay-label">Compare</span><button type="button" data-mask="expert1" aria-pressed="false">Expert 1</button><button type="button" data-mask="expert2" aria-pressed="false">Expert 2</button><button type="button" data-mask="expert3" aria-pressed="false">Expert 3</button><span class="picker-divider"></span><button type="button" data-mask="strict" aria-pressed="false">Strict</button><button type="button" data-mask="aligned" aria-pressed="true">Aligned</button></div>
+      <div class="example-caption"><div><h3 id="example-title">Horizontal composition</h3><p id="example-description">The selected regions establish a horizontal direction.</p></div><div class="agreement-readout"><span title="Mean Dice across pairs of experts, before alignment.">Agreement (Dice)</span><strong id="example-agreement">1.000</strong></div></div>
+    </div>
+  </div>
+  <p class="explorer-footnote">These 18 examples were selected for the paper. Blue shows regions selected by the experts. The “Aligned” view first accounts for experts who select opposite sides of the same boundary, then takes the majority.</p>
+  <noscript><p class="no-script">Enable JavaScript to switch examples and annotation views. All examples and definitions are also available in the <a href="assets/downloads/supplement.pdf">supplement</a>.</p></noscript>
+</section>
+<section class="understanding-section" id="dataset" aria-labelledby="dataset-title"><div class="section-shell">
+  <div class="section-heading"><div><p class="eyebrow"><span class="section-number">02</span> Dataset</p><h2 id="dataset-title">Dataset and annotations</h2></div><p>One annotator supplies the training masks. <br>Three experts annotate each task in the test set.</p></div>
+  <div class="dataset-story"><div class="dataset-essay"><p class="large-copy">The annotations identify visible support for a composition, including objects, surfaces, background, and negative space.</p><p>KU-PCPE adds spatial evidence to the positive composition labels of KU-PCP. Each task pairs one image with one applicable label. Annotators select the regions that jointly support that composition.</p><p>The three experts worked independently on the test set. They could select, split, add to, or refine proposed regions. Their individual masks preserve different interpretations. We combine these masks in two ways to evaluate models.</p><details><summary>How do the two consensus masks differ?<span aria-hidden="true">+</span></summary><div><p><b>Strict:</b> a pixel belongs to the target when at least two of the three experts selected it.</p><p><b>Ambiguity-aware:</b> we compare the second and third experts’ masks with the first expert’s mask. If selecting the opposite region gives better agreement, we use that selection instead. A majority vote then combines the three masks. This accommodates choices such as sky or ground around the same horizon.</p><p>The annotations reflect subjective judgments, and the proposed regions may influence those judgments. An independent audit without proposed regions has not been performed.</p></div></details></div>
+  <div class="split-panel"><div class="split-head"><span>Training and test sets</span><svg><use href="#icon-pattern"/></svg></div><div class="split-row"><div><span class="small-label">Training set</span><strong>4,093</strong><span>tasks · 3,169 images</span></div><span class="rater-stack"><i>1</i><small>annotator</small></span></div><div class="split-row test-split"><div><span class="small-label">Test set</span><strong>1,327</strong><span>tasks · 1,073 images</span></div><span class="rater-stack three"><i>1</i><i>2</i><i>3</i><small>independent experts</small></span></div><div class="split-bottom">3,981 test masks + 4,093 training masks <br><b>8,074 individual annotations</b></div></div></div>
+  <div class="class-distribution"><div class="distribution-header"><h3>Tasks by composition class</h3><span>Image–label tasks <span class="distribution-legend"><i></i> Train <i></i> Test</span></span></div><div id="class-distribution" class="distribution-bars" aria-label="Task distribution by composition class"></div><p>Images with more than one positive label contribute a separate task for each label. Training and test use different images and annotators.</p></div>
+</div></section>
+<section class="benchmark-section section-shell" id="benchmark" aria-labelledby="benchmark-title">
+  <div class="section-heading"><div><p class="eyebrow"><span class="section-number">03</span> Evaluation</p><h2 id="benchmark-title">Benchmark results</h2></div><p>Compare predicted regions with human evidence. <br>All means are computed over the 1,327 tasks in the test set.</p></div>
+  <div class="benchmark-grid"><div class="benchmark-copy"><h3>Models and reference scores</h3><p>The benchmark measures how well predicted regions agree with the experts. Models receive a photograph and its composition label. Oracles also use the target mask to estimate how much of it can be recovered from the proposed regions.</p><p>SegFormer-B0 reaches .664 Dice, compared with .395 for the strongest vision-language model (VLM) tested. In a separate comparison, the template method and VLM choose from the same 12 proposals. This tests their ability to select regions while keeping the available proposals fixed.</p><div class="finding"><span>Same 12 proposals</span><strong>.402 <small>vs.</small> .395</strong><p>The template method scores .402 and Qwen3-VL-32B scores .395 Dice. The confidence interval for their difference includes zero, so these results do not establish an advantage for either method.</p></div><a class="text-link" href="assets/downloads/supplement.pdf" target="_blank" rel="noopener">Protocols &amp; confidence intervals <svg><use href="#icon-arrow"/></svg></a></div>
+  <div class="benchmark-chart"><div class="chart-toolbar"><div class="segmented" role="group" aria-label="Proposals available for comparison"><button type="button" data-budget="full" aria-pressed="true">Full bank</button><button type="button" data-budget="matched" aria-pressed="false">Matched 12</button></div><span>Dice ↑</span></div><div id="chart-bars" class="chart-bars" role="list" aria-label="Benchmark Dice scores"></div><div class="chart-scale"><span>0</span><span>.25</span><span>.50</span><span>.75</span><span>1</span></div><div class="chart-legend"><span><i class="model-key"></i> Predictive method</span><span><i class="oracle-key"></i> Oracle (uses target)</span><span><i class="human-key"></i> Human reference</span></div><p id="chart-note">Model scores use the consensus of three experts after accounting for complementary selections. The human reference compares one expert with the consensus of the other two, after alignment. The greedy oracle uses the target mask to select up to three proposals. Whiskers show 95% confidence intervals obtained by resampling tasks.</p></div></div>
+</section>
+<section class="resources-section" id="resources" aria-labelledby="resources-title"><div class="section-shell">
+  <div class="section-heading"><div><p class="eyebrow"><span class="section-number">04</span> Resources</p><h2 id="resources-title">Dataset and resources</h2></div><p>One dataset download. <br>Separate files reproduce the paper’s results.</p></div>
+  <div class="access-panel dataset-download-panel" id="dataset-download">
+    <div><span class="release-chip"><span class="status-dot"></span> Annotations and metadata</span><h3>KU-PCPE dataset</h3><p>One archive contains all 8,074 annotations and the metadata for all four completed annotators. It includes component masks, ratings, tool counts, and reduced relative timelines.</p><a class="button button-dark dataset-download-button" id="dataset-download-link" href="https://github.com/ADadras/ku-pcpe/raw/refs/heads/main/data/bundles/kupcp_completed_public_20261023_v1.tar.gz" target="_blank" rel="noopener"><svg><use href="#icon-down"/></svg>Download dataset · 69.5 MiB</a></div>
+    <div class="access-details"><p><b>Use this download for the annotations and study metadata.</b> Original photographs must be obtained separately under the KU-PCP distributor’s terms. The KU-PCPE annotation layer is CC BY 4.0; code is MIT licensed.</p><a class="text-link" href="mailto:adadras@cvl.tuwien.ac.at">Dataset inquiries <svg><use href="#icon-arrow"/></svg></a></div>
+  </div>
+  <div class="resource-group reproduction-assets" aria-labelledby="reproduction-assets-title">
+    <h3 id="reproduction-assets-title">Additional files for reproducing the paper</h3><p>These support the evaluator for the same dataset. They are not additional datasets.</p>
+    <div class="resource-links">
+      <a class="resource-row" href="https://github.com/ADadras/ku-pcpe/raw/refs/heads/main/data/bundles/ku_pcpe_annotations_1.0.0-rc.2.tar.gz" target="_blank" rel="noopener"><span class="resource-icon"><svg><use href="#icon-down"/></svg></span><div><h3>Annotations for the evaluator</h3><p>The same final masks in the evaluator’s format, plus consensus masks and checks</p></div><span class="file-type">37.0 MiB</span><svg><use href="#icon-down"/></svg></a>
+      <a class="resource-row" href="https://github.com/ADadras/ku-pcpe/raw/refs/heads/main/data/bundles/ku_pcpe_replay_1.0.0-rc.2.tar.gz" target="_blank" rel="noopener"><span class="resource-icon"><svg><use href="#icon-down"/></svg></span><div><h3>Saved predictions and proposals</h3><p>Model outputs, ordered proposals, and responses from all seven VLMs</p></div><span class="file-type">30.6 MiB</span><svg><use href="#icon-down"/></svg></a>
+    </div>
+    <a class="text-link reproduction-instructions" href="https://github.com/ADadras/ku-pcpe#reproduce-the-tables" target="_blank" rel="noopener">Code and reproduction instructions <svg><use href="#icon-arrow"/></svg></a>
+  </div>
+  <div class="resource-group" aria-labelledby="paper-resources-title"><h3 id="paper-resources-title">Paper and supplement</h3><div class="resource-links"><a class="resource-row" href="assets/downloads/paper.pdf" target="_blank" rel="noopener"><span class="resource-icon"><svg><use href="#icon-paper"/></svg></span><div><h3>Research paper</h3><p>Task, annotations, benchmark, and findings</p></div><span class="file-type">PDF · 15.6 MB</span><svg><use href="#icon-arrow"/></svg></a><a class="resource-row" href="assets/downloads/supplement.pdf" target="_blank" rel="noopener"><span class="resource-icon"><svg><use href="#icon-paper"/></svg></span><div><h3>Supplementary material</h3><p>Class guide, examples, protocols, and full results</p></div><span class="file-type">PDF · 4.2 MB</span><svg><use href="#icon-arrow"/></svg></a></div></div>
+</div></section>
+<section class="citation-section section-shell" id="citation" aria-labelledby="citation-title"><div class="citation-heading"><div><p class="eyebrow">Citation</p><h2 id="citation-title">Citation</h2></div><button class="button button-outline" id="copy-citation" type="button"><svg><use href="#icon-copy"/></svg><span>Copy BibTeX</span></button></div><pre><code id="citation-code">@inproceedings{dadras2027kupcpe,
+  title     = {Grounding Image Composition with Label-Conditioned Visual Evidence},
+  author    = {Dadras, Armin and Lin, Tingyu and Sablatnig, Robert
+               and Proksa, Franziska and Seidl, Markus},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference
+               on Applications of Computer Vision (WACV)},
+  year      = {2027}
+}</code></pre><p class="citation-note">Please also credit the original KU-PCP dataset: Lee et al., <span class="publication-title">Photographic composition classification and dominant geometric element detection for outdoor scenes</span>, JVCIR 55, 2018. <a href="assets/downloads/citation.bib" download>Download BibTeX ↓</a></p><p id="copy-status" class="sr-only" role="status" aria-live="polite"></p></section>
+</main>
+<footer class="site-footer"><div class="section-shell"><a class="wordmark" href="#top"><span>KU-PCP Elements</span></a><p>Regions selected by people to explain photographic composition. <br><span>TU Wien · UAS St. Pölten · WACV 2027</span></p><a href="https://github.com/ADadras/ku-pcpe" target="_blank" rel="noopener">GitHub / KU-PCPE <svg><use href="#icon-arrow"/></svg></a></div><div class="section-shell footer-bottom"><span>Example photography from KU-PCP; annotations from KU-PCPE. Image rights remain with their original owners.</span><a href="credits.html">Credits &amp; terms</a></div></footer>
+</body>
+</html>

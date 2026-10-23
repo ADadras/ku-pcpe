@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ku-pcpe"
+version = "1.0.0rc2"
+description = "KU-PCP Elements: deterministic region-evidence benchmark evaluation"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.2.6", "Pillow==11.3.0", "scipy==1.16.3", "opencv-python-headless==4.10.0.84", "pycocotools==2.0.10"]
+[project.scripts]
+ku-pcpe = "ku_pcpe.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

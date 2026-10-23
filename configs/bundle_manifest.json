@@ -1,0 +1,14 @@
+[
+  {
+    "file": "ku_pcpe_annotations_1.0.0-rc.2.tar.gz",
+    "bytes": 38764844,
+    "sha256": "fd5f4bfa0276017367ff129ca19108e218240bfa094bb04748222d4faef8c584",
+    "root": "release_candidate_v1.0.0-rc.2"
+  },
+  {
+    "file": "ku_pcpe_replay_1.0.0-rc.2.tar.gz",
+    "bytes": 32090712,
+    "sha256": "854196a7e6b73807092f41028871122f8c51911bf6b811db4aba377fffbb7380",
+    "root": "replay_bundle_v1.0.0-rc.2"
+  }
+]

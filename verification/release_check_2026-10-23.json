@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "checked_date": "2026-10-23",
+  "time_zone": "Europe/Vienna",
+  "scope": "Fresh install, archive validation, CPU fixture, saved-prediction benchmark and complete-study reaggregation. No new model inference or training.",
+  "python": "3.12.12",
+  "platform": "Linux x86_64",
+  "pytest_cases": 50,
+  "slurm_job_id": "902488",
+  "requested_cpus": 8,
+  "requested_memory_gib": 10,
+  "gpu_requested": false,
+  "scheduler_elapsed": "00:08:42",
+  "harness_elapsed_seconds": 520.5776142058894,
+  "largest_child_rss_kib": 6285696,
+  "scheduler_batch_max_rss_kib": 10388168,
+  "resource_note": "Scheduler batch MaxRSS and maximum child-process RSS use different accounting scopes; neither is a model-speed benchmark.",
+  "network_after_install": "TCP denied by Landlock",
+  "research_source_access": "Denied by Landlock; original study checkout and source files were explicitly probed.",
+  "requirements_lock_sha256": "c09e1b9fde5a2c7ca870ef758f4800a680abc43d2228d7ad5453e7fc6a6f6993",
+  "tested_files_sha256": {
+    "expected/canonical.csv": "935b2540f48c7555d7fe92744cd2a3820262a8dcb42821c5e1ff893df91a200d",
+    "expected/human_ci.csv": "422addc3830c9f84eab9100ed5222dd0f0f121135ec95c51bdcea375618118dd",
+    "expected/matched12.csv": "6221b6a71f7f951ee4e4dc58160937c0ae8cb97ce04d147ae7b2b9bc093b1168",
+    "expected/matched12_per_class.csv": "097ea3a49e829903d2e7519e11e32bb151d73ed9aff1086ead066524aa1b909a",
+    "expected/paired_intervals.csv": "bfa7f0a3ec2989b1a78b7f8c773ddce4724f33963f0e4201d1553c44cd2c5805",
+    "expected/workflow_all_raters/modality_per_class.csv": "babc7415cc36f2d29eb0bfeda04128ba3ad585f64e680c10405592f5bcdc4144",
+    "expected/workflow_all_raters/modality_summary.csv": "b4a3e6b35a7b6a0f14bc9e2efe8ff4576e31e874cad606e0bbc218e336ea2478",
+    "expected/workflow_all_raters/per_rater_sensitivity.csv": "95fe54f8ef17fe49ba9847b244dc0441fd174ae1ae9e7c9132f3da29b5cfb6b6",
+    "expected/workflow_all_raters/process_summary.csv": "3ab658b609c674ce286a57ec55fd60fd1fb33cfb1b895317b44906dbf9d07a70",
+    "expected/workflow_all_raters/workflow_agreement_full.csv": "cd768d42786c7aa3fc990be09964342a933863e21c371e2c3975d559a898eacd",
+    "expected/workflow_all_raters/workflow_class_balanced.csv": "c336856fb838a02ff976e23c054eec5e833774d06e6850e30379cf71fe33d770",
+    "expected/workflow_all_raters/workflow_model_metrics.csv": "1f096a9c026d771e26d80281abd200cadf6a6a7838c86850eb5ccf458aae6ef6",
+    "expected/workflow_all_raters/workflow_per_class.csv": "e4e7ad366960ead36ca5e99e1ce8b9c923635ccddc79a55547dd303a2757a514",
+    "expected/workflow_all_raters/workflow_summary.csv": "4759b1243df76d3b473a92ef8a6df367cf767c498413e62661432aa16cb0913d",
+    "pyproject.toml": "c58df1792c26171725d89fde8f1c5e1f28e2ce1bb64af7cd4349d609aef00ba6",
+    "requirements.lock": "c09e1b9fde5a2c7ca870ef758f4800a680abc43d2228d7ad5453e7fc6a6f6993",
+    "scripts/download_annotations.py": "b9009bf13c8c1016e5a7d87390c74418932451a82d73a1ea097038383b642ea9",
+    "scripts/infer_unet_subset.py": "7c85cda80f3792eab503178264636ead69ff082bd935219e21b7399c7a3ca680",
+    "scripts/install_bundle.py": "d8c8ac48d3cbdece8d21912b7a373ee9ce8ab43be08f3f546a9ef23377623262",
+    "scripts/install_release.py": "ce7e2d3d3ac26c02d710778ffb7c2969513d31cc64ececacfa006e16162ad40a",
+    "scripts/reconstruct_images.py": "a01bdfdd4bbc81c67b111917adcce04e4eaa1d7cc4fdab248dc1ede2f2070ab3",
+    "scripts/reproduce.py": "e260e2c44a7a3be4c7968915a57ad7705e648a603819f69c95cca02f0160c866",
+    "scripts/run_smoke_test.py": "e376805c19d1dad02db5cc985ffaf4dbb5799c4296f3b20a0328cc06a83f3e65",
+    "scripts/sandbox_run.py": "1b65f87b985a6d79834f50a72c0d029bf7c6309659d8cb0718b860598498c71e",
+    "scripts/summarize_complete_study.py": "a770752824806362f785acf028784222d7d15119c1c1b3ba6ef2f04270ff283b",
+    "scripts/summarize_human.py": "126e1c3297552224e38a5d1d155f9b32411081570b450a7eba0d6d3d80f18f7e",
+    "scripts/verify_release.py": "d585341084474f7fdace3fa84f11c777e4c22a47bc45d4424738c296f3bea6e2",
+    "src/ku_pcpe/__init__.py": "3643b04307c4757c301be72677d03e212ffe7e182ac1130004a094b14238e6d1",
+    "src/ku_pcpe/baselines.py": "c9bb920370ca7f05d3e6923dbb2da20b98e0db50837e7a303dccd015f147c1c5",
+    "src/ku_pcpe/cache.py": "98caf49228dd267452975b8ad1566a37a08c049ae7206511c36501c0cfaea852",
+    "src/ku_pcpe/cli.py": "f3bb3f554c2cc6357658eb0dcfb8b7f5a9dc04c0be62e72fdb69d68710e6118b",
+    "src/ku_pcpe/data.py": "de89d6ee006cdf644c5a9403698ea49c1261ff5681dfdb6de60c3c1e25cc199c",
+    "src/ku_pcpe/evaluate.py": "00fd5467a1d7e17a5680dc1536d23e8dc487781de037d96adb6d5d31000073d4",
+    "src/ku_pcpe/metrics.py": "dc6ff79588302b18c0b7db63fd495ff4460c0806f05e0dac40d631592c54d267",
+    "src/ku_pcpe/proposals.py": "dc5acfa4b76e6512d0308a69a0c58051f624ead367c0e2542eccad8344c0e1c9",
+    "src/ku_pcpe/unet.py": "61768f1e3a1d3963f91f05bd7db3141f425caebb349ad0e2d1fd1b6b526cddaf",
+    "src/ku_pcpe/validation.py": "174a173ad096a2623072d8c46d4b541ef3fcc419f6235dad9fe4eac4deac288d",
+    "tests/test_complete_study.py": "580a66a1cf2a3ab6a9f3d24dbc28abe012d59055adfb27a2f34b86a18713c0a3",
+    "tests/test_core.py": "03f573759ec329d2cea97905ef486300d7f0b1657f77a2093e0fb902c06c75ad"
+  },
+  "data_archives": [
+    {
+      "file": "ku_pcpe_annotations_1.0.0-rc.2.tar.gz",
+      "bytes": 38665559,
+      "sha256": "bba20fca69303787278bf9ffaef84d1046c17d1cb5f65f69a1b005263479ff0c",
+      "root": "release_candidate_v1.0.0-rc.2"
+    },
+    {
+      "file": "ku_pcpe_replay_1.0.0-rc.2.tar.gz",
+      "bytes": 31880638,
+      "sha256": "83ecc5757ddb0d75e8819164e0bfcca2a367caf0a5878564f6fddb87ad9f71e1",
+      "root": "replay_bundle_v1.0.0-rc.2"
+    },
+    {
+      "file": "kupcp_completed_public_20261023_v1.tar.gz",
+      "bytes": 72839504,
+      "sha256": "c4fa7276b84a4d7f8829aa1eb3e95f5b1a050059197325c7c5c12e24b07aa844",
+      "root": "kupcp_completed_public_20261023_v1",
+      "schema": "kupcp_public_annotations_v1",
+      "role": "Optional complete-study metadata export; additional to the frozen benchmark archives",
+      "annotations": 8074,
+      "completed_annotator_split_sets": 4,
+      "source_photographs_included": false
+    }
+  ],
+  "reproduction": {
+    "status": "PASS",
+    "started_utc": "2026-10-23T15:23:14.571743+00:00",
+    "python": "3.12.12",
+    "workers": 8,
+    "steps": [
+      {
+        "step": "release_integrity",
+        "status": "PASS"
+      },
+      {
+        "step": "pytest",
+        "status": "PASS"
+      },
+      {
+        "step": "synthetic_fixture",
+        "status": "PASS"
+      },
+      {
+        "step": "install_assets",
+        "status": "PASS"
+      },
+      {
+        "step": "annotation_validation",
+        "status": "PASS"
+      },
+      {
+        "step": "replay_validation",
+        "status": "PASS"
+      },
+      {
+        "step": "benchmark",
+        "status": "PASS"
+      },
+      {
+        "step": "human_intervals",
+        "status": "PASS"
+      },
+      {
+        "step": "complete_study",
+        "status": "PASS"
+      }
+    ],
+    "benchmark": {
+      "status": "PASS",
+      "tasks": 1327,
+      "canonical_rows": 53080,
+      "matched_rows": 29194,
+      "elapsed_seconds": 373.4357342720032,
+      "checks": {
+        "canonical": {
+          "status": "PASS",
+          "rows": 40,
+          "max_difference": 0.0,
+          "errors": []
+        },
+        "matched12": {
+          "status": "PASS",
+          "rows": 22,
+          "max_difference": 0.0,
+          "errors": []
+        },
+        "matched12_per_class": {
+          "status": "PASS",
+          "rows": 198,
+          "max_difference": 0.0,
+          "errors": []
+        },
+        "paired": {
+          "status": "PASS",
+          "rows": 50,
+          "max_difference": 0.0,
+          "errors": []
+        },
+        "human": {
+          "status": "PASS",
+          "differences": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "boundary_f1": 0.0,
+            "overcover": 0.0,
+            "hit_at_0_5": 0.0
+          }
+        }
+      }
+    },
+    "complete_study": {
+      "status": "PASS",
+      "annotations": 8074,
+      "test_annotations": 3981,
+      "test_tasks": 1327,
+      "task_groups": {
+        "no_geometry_action": 615,
+        "any_geometry_action": 712
+      },
+      "raters": 4,
+      "bootstrap_samples": 10000,
+      "seed": 920,
+      "resampling_unit": "image-label task",
+      "image_clustering": "Not performed; multiple labels on an image may be correlated",
+      "grouping": "No geometry action in all three retained records versus at least one action in any record",
+      "geometry_event_types": [
+        "accept_region",
+        "add_dynamic_segment",
+        "add_negative_point",
+        "add_positive_point",
+        "apply_manual_refinement",
+        "clear_current_region",
+        "remove_region",
+        "split_segment",
+        "undo_refinement"
+      ],
+      "frozen_benchmark_reconstruction_max_difference": 1.1102230246251565e-16,
+      "expected_max_difference": 0.0,
+      "elapsed_seconds": 9.66655302606523,
+      "metadata_manifest_sha256": "43dda91176c15b0a291c00ac6fe196409c889fc927f14a3958fe613585aa3f57",
+      "canonical_per_task_sha256": "941cc8eb5b7b517ec8d90288554208967d43afb1dd2e653d398fa8eed6c1b9a7",
+      "script_sha256": "a770752824806362f785acf028784222d7d15119c1c1b3ba6ef2f04270ff283b"
+    },
+    "elapsed_seconds": 505.2341467407532
+  },
+  "human_intervals": {
+    "status": "PASS",
+    "differences": {
+      "tasks": 0.0,
+      "dice": 0.0,
+      "dice_ci_low": 0.0,
+      "dice_ci_high": 0.0,
+      "iou": 0.0,
+      "iou_ci_low": 0.0,
+      "iou_ci_high": 0.0,
+      "boundary_f1": 0.0,
+      "boundary_f1_ci_low": 0.0,
+      "boundary_f1_ci_high": 0.0,
+      "overcover": 0.0,
+      "overcover_ci_low": 0.0,
+      "overcover_ci_high": 0.0,
+      "hit_at_0_5": 0.0,
+      "hit_at_0_5_ci_low": 0.0,
+      "hit_at_0_5_ci_high": 0.0
+    }
+  },
+  "metadata_privacy_scan": {
+    "status": "PASS",
+    "annotation_records": 8074,
+    "participants": 4,
+    "direct_identity_fields_checked": "No prohibited direct-identity fields found in the annotation records or participant headers.",
+    "source_path_or_credential_patterns": "None found in the annotation JSONL records.",
+    "limitation": "Pseudonyms do not guarantee irreversible anonymity in a small cohort."
+  },
+  "hosted_ci": "Local and cluster numerical reproduction evidence; hosted workflow results are available in GitHub Actions."
+}

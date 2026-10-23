@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accepted WACV 2027 paper and original KU-PCP."
+title: "Grounding Image Composition with Label-Conditioned Visual Evidence"
+type: software
+version: "1.0.0-rc.2"
+authors:
+  - family-names: "Dadras"
+    given-names: "Armin"
+  - family-names: "Lin"
+    given-names: "Tingyu"
+  - family-names: "Sablatnig"
+    given-names: "Robert"
+  - family-names: "Proksa"
+    given-names: "Franziska"
+  - family-names: "Seidl"
+    given-names: "Markus"
+repository-code: "https://github.com/ADadras/ku-pcpe"

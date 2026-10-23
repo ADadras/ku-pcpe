@@ -1,0 +1,9 @@
+{
+  "basis": "Camera-ready paper and supplement with author comments, verified references, final wording cleanup and public project-page link, 30 October 2026; benchmark results unchanged.",
+  "sha256": {
+    "data.js": "c5ef321d58830704f3adda97ac92f9a2fc536692fac521d28c29cd05801e0cae",
+    "assets/downloads/paper.pdf": "e0b093f1dd19c85bc416adc6149dea9bf6617c0430e4bb22f402b03277c78921",
+    "assets/downloads/supplement.pdf": "83ac45bf784bc33cd0363bae5b14e50383ca8f3f39ab9076f34e66742e68e14a",
+    "assets/downloads/citation.bib": "124012da15c6f4e0b3a30f9518a991485ae093dae210a9c9ae923633101bee69"
+  }
+}

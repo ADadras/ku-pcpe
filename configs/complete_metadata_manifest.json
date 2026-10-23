@@ -1,0 +1,11 @@
+{
+  "file": "kupcp_completed_public_20261023_v1.tar.gz",
+  "bytes": 72839504,
+  "sha256": "c4fa7276b84a4d7f8829aa1eb3e95f5b1a050059197325c7c5c12e24b07aa844",
+  "root": "kupcp_completed_public_20261023_v1",
+  "schema": "kupcp_public_annotations_v1",
+  "role": "Primary KU-PCPE dataset: all annotations and sanitized study metadata",
+  "annotations": 8074,
+  "completed_annotator_split_sets": 4,
+  "source_photographs_included": false
+}

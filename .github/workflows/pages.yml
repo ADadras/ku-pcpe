@@ -1,0 +1,50 @@
+name: Prepare project page
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Publish approved page (requires public repository and main branch)'
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check static site and asset integrity
+        run: python website/tools/check_site.py
+      - name: Check JavaScript syntax
+        run: node --check website/site/app.js
+      - name: Package website only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: website/site
+  deploy:
+    if: ${{ inputs.deploy && !github.event.repository.private && github.ref == 'refs/heads/main' }}
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy approved page
+        id: deployment
+        uses: actions/deploy-pages@v4

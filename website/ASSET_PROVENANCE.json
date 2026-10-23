@@ -1,0 +1,261 @@
+{
+  "examples": [
+    {
+      "example": "horizontal-typical",
+      "task_id": "val::0823::horizontal",
+      "source_photo_sha256": "36048674ac9f0298817c7a3e3a98c34ea7e5dcb430655171d6d163ff52731b59",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "8c0045db01b8f70e77cab1c20cd60f5890fe1129b499454e127cec10ba7407f6",
+        "expert2": "8c0045db01b8f70e77cab1c20cd60f5890fe1129b499454e127cec10ba7407f6",
+        "expert3": "8c0045db01b8f70e77cab1c20cd60f5890fe1129b499454e127cec10ba7407f6",
+        "strict": "8c0045db01b8f70e77cab1c20cd60f5890fe1129b499454e127cec10ba7407f6",
+        "aligned": "8c0045db01b8f70e77cab1c20cd60f5890fe1129b499454e127cec10ba7407f6"
+      }
+    },
+    {
+      "example": "horizontal-ambiguous",
+      "task_id": "val::0673::horizontal",
+      "source_photo_sha256": "d547e5457f6cb25e589bd90411816c2957ed2a98afd8d811078e4869fe094b9f",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "13a0b5b7ff89bb150b9c4d0bb34c51a5624d2f3fb6487a5ffe04d376cad9edb5",
+        "expert2": "f9f41b845cd9182530a5419ebf60e6f4bb2a7f5635444e930c5039957d93dae3",
+        "expert3": "33db0547a5a596bcd5a9cf188af1ee56df7838445c2aeceef1acfa7affaceced",
+        "strict": "e91a3cb7b3e894dae3cc1a20da9bea40c247ed98a7ffcc1c2f014902af7006e1",
+        "aligned": "c4c6935279fa2eb6f6163337eed50a21aa52fb22b90460d734d2e876634ad777"
+      }
+    },
+    {
+      "example": "vertical-typical",
+      "task_id": "val::0846::vertical",
+      "source_photo_sha256": "436465a104f4e55afcda87e24c518feb0b469eb53b6eef8bcff774f379abee22",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "3e775c91828a03666a59bfded16010faf34e216e1691573de48b96af03521a03",
+        "expert2": "3e775c91828a03666a59bfded16010faf34e216e1691573de48b96af03521a03",
+        "expert3": "3e775c91828a03666a59bfded16010faf34e216e1691573de48b96af03521a03",
+        "strict": "3e775c91828a03666a59bfded16010faf34e216e1691573de48b96af03521a03",
+        "aligned": "3e775c91828a03666a59bfded16010faf34e216e1691573de48b96af03521a03"
+      }
+    },
+    {
+      "example": "vertical-ambiguous",
+      "task_id": "val::0949::vertical",
+      "source_photo_sha256": "359f39abedf1780810040b11a7f369e8367a25e5d13e4bf82a57eaad939f3a34",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "684074f525c94df5ead84933c588d87821c90fcfdceb4085d1b1cb279c1e8e5b",
+        "expert2": "5530d94051be1ebabdddcf6f02dce4aeb5ad8f0816556cab2e13b7d342af9b23",
+        "expert3": "684074f525c94df5ead84933c588d87821c90fcfdceb4085d1b1cb279c1e8e5b",
+        "strict": "684074f525c94df5ead84933c588d87821c90fcfdceb4085d1b1cb279c1e8e5b",
+        "aligned": "684074f525c94df5ead84933c588d87821c90fcfdceb4085d1b1cb279c1e8e5b"
+      }
+    },
+    {
+      "example": "diagonal-typical",
+      "task_id": "val::0407::diagonal",
+      "source_photo_sha256": "1f3f6e41b3b663ca7e10da37551f2b39f9f17621be8a41bc5458838e4c371296",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "81c81cb5fdd6a073e197612e31841651cdbabbbe7591003eb24113b581cb1e48",
+        "expert2": "81c81cb5fdd6a073e197612e31841651cdbabbbe7591003eb24113b581cb1e48",
+        "expert3": "81c81cb5fdd6a073e197612e31841651cdbabbbe7591003eb24113b581cb1e48",
+        "strict": "81c81cb5fdd6a073e197612e31841651cdbabbbe7591003eb24113b581cb1e48",
+        "aligned": "81c81cb5fdd6a073e197612e31841651cdbabbbe7591003eb24113b581cb1e48"
+      }
+    },
+    {
+      "example": "diagonal-ambiguous",
+      "task_id": "val::0191::diagonal",
+      "source_photo_sha256": "8f957668c1501ffbc5fc88c3f1594a3f11173c055d1825a746d8b273c5bc8481",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "f0565952a8c4110c87a56909598977fe1a5b75fa16a2f987a7e664d5f2a96ac1",
+        "expert2": "98e1148982f35a391db122e1cea5bba39ff8bd5f85f6c0e9d9f8b67537b81d31",
+        "expert3": "83ea66b9497c0bdb88575528e337ad23a9a997df03fa9ba6b76a189df793ea50",
+        "strict": "6cded0d370ceee3677d021b5cf14160adaf7747c2b32217583fd4eed6c9c5a0a",
+        "aligned": "3d721d08707df3ce00684ddcc8fe5add68e573faed39deed42b575af607dd008"
+      }
+    },
+    {
+      "example": "curved-typical",
+      "task_id": "val::1083::curved",
+      "source_photo_sha256": "72a9ddffbba403217bd24233e0d4531f880ceb893796bd6df9aaf8f0c7369c7d",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "416303e59835716d358328e4bd0bcbb29f71a09f4ded53918ad9ea89132983dd",
+        "expert2": "416303e59835716d358328e4bd0bcbb29f71a09f4ded53918ad9ea89132983dd",
+        "expert3": "416303e59835716d358328e4bd0bcbb29f71a09f4ded53918ad9ea89132983dd",
+        "strict": "416303e59835716d358328e4bd0bcbb29f71a09f4ded53918ad9ea89132983dd",
+        "aligned": "416303e59835716d358328e4bd0bcbb29f71a09f4ded53918ad9ea89132983dd"
+      }
+    },
+    {
+      "example": "curved-ambiguous",
+      "task_id": "val::0014::curved",
+      "source_photo_sha256": "719d577af214057112890748d38d6dcc9b44c2853b0fb86fbbae55038bfa947f",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "813c33515b22f1d78fa7558e33cb93ae1d73087009ed22ef624711d6c4cbf52d",
+        "expert2": "fbc07a57e5055e4f0d7aaa3d5d1c76efa9ec072b06f4b25eb0062f1db005a106",
+        "expert3": "e6bd222e0cf4377075f5efad42344e99c1d886d69e698cea788fca2c51a13d7b",
+        "strict": "5578b3c9296f1a269e8bf2f3e470d71ae0d3a8e52e13e9ea79e7b0dfe5115556",
+        "aligned": "3dcc9fc6447c2f1e21e71956a8146a7899abceb742f81a39a94388a439a28ffd"
+      }
+    },
+    {
+      "example": "triangle-typical",
+      "task_id": "val::0137::triangle",
+      "source_photo_sha256": "ea39b396fb79e23d19f38886c709a05ceaca10425bcae161b929adc3421d9917",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "cf167bf7bf70462d30f227b84973aa84a4cf3a5f7ef1da8e8f8f54d1298adb47",
+        "expert2": "cf167bf7bf70462d30f227b84973aa84a4cf3a5f7ef1da8e8f8f54d1298adb47",
+        "expert3": "cf167bf7bf70462d30f227b84973aa84a4cf3a5f7ef1da8e8f8f54d1298adb47",
+        "strict": "cf167bf7bf70462d30f227b84973aa84a4cf3a5f7ef1da8e8f8f54d1298adb47",
+        "aligned": "cf167bf7bf70462d30f227b84973aa84a4cf3a5f7ef1da8e8f8f54d1298adb47"
+      }
+    },
+    {
+      "example": "triangle-ambiguous",
+      "task_id": "val::0586::triangle",
+      "source_photo_sha256": "a843271487e61357afdd43017a8223765d20401986450393cc45141271b4d69c",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "9fea5564bf30c003dd3c8d5dc1a018fccdd793b3e8c9e36d8cd3f5dd64275af8",
+        "expert2": "a203732d3fd0ff6388be705ba1e271c31a37e442103921c0650df559ed3335b5",
+        "expert3": "3a48f6b78ee3977ce097e8817fa40501caa8aaec1c40b7096a17df4b85ac0d81",
+        "strict": "cf0da675c331edb4fe63b6a34513f6734defc00e89721443bc38d728f0b70de4",
+        "aligned": "d0bc5648e4c7fc8510866648cd13264c58f3c1ab756758b00832c9d896b4c189"
+      }
+    },
+    {
+      "example": "rule_of_thirds-typical",
+      "task_id": "val::0214::rule_of_thirds",
+      "source_photo_sha256": "a153f6a61b5d1b6316f6a4b36914d9f6afa65beeef0bd9c2194df841f593951b",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "9fb755f10b50631b2643d0c4f0397de283f78f6a3ac93aeb88086e3a4cd715f9",
+        "expert2": "9fb755f10b50631b2643d0c4f0397de283f78f6a3ac93aeb88086e3a4cd715f9",
+        "expert3": "9fb755f10b50631b2643d0c4f0397de283f78f6a3ac93aeb88086e3a4cd715f9",
+        "strict": "9fb755f10b50631b2643d0c4f0397de283f78f6a3ac93aeb88086e3a4cd715f9",
+        "aligned": "9fb755f10b50631b2643d0c4f0397de283f78f6a3ac93aeb88086e3a4cd715f9"
+      }
+    },
+    {
+      "example": "rule_of_thirds-ambiguous",
+      "task_id": "val::0698::rule_of_thirds",
+      "source_photo_sha256": "fbfe817a6b579ca1a47e98042ceff6a294e365d31bda1e3b044968332fdde06d",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "9c376f0782839b586e680241f8779bdf6ef5416417021d37ba1789e1461425b9",
+        "expert2": "06efcf9bab8bb2c06c51505ddc5636f10218b501b0d2716332b0815c43de95a8",
+        "expert3": "06efcf9bab8bb2c06c51505ddc5636f10218b501b0d2716332b0815c43de95a8",
+        "strict": "06efcf9bab8bb2c06c51505ddc5636f10218b501b0d2716332b0815c43de95a8",
+        "aligned": "06efcf9bab8bb2c06c51505ddc5636f10218b501b0d2716332b0815c43de95a8"
+      }
+    },
+    {
+      "example": "center-typical",
+      "task_id": "val::0539::center",
+      "source_photo_sha256": "c94a9aae6c73c9c330e40c8fc122ab89713dc314399af35d7e6779cf38600c60",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "73c98f642a8e33253af30ab6fb965bc5b2b33a605989d77db9bb8df7ff4867de",
+        "expert2": "73c98f642a8e33253af30ab6fb965bc5b2b33a605989d77db9bb8df7ff4867de",
+        "expert3": "73c98f642a8e33253af30ab6fb965bc5b2b33a605989d77db9bb8df7ff4867de",
+        "strict": "73c98f642a8e33253af30ab6fb965bc5b2b33a605989d77db9bb8df7ff4867de",
+        "aligned": "73c98f642a8e33253af30ab6fb965bc5b2b33a605989d77db9bb8df7ff4867de"
+      }
+    },
+    {
+      "example": "center-ambiguous",
+      "task_id": "val::0338::center",
+      "source_photo_sha256": "2566d01f716538bb30d89cc588b2638b915d44413cb21c9b47ed80814fc92352",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "82c98c0c33c1713ace63bd21e3d0a66c87c9cc9a25b37cd19ae3e5f4b74807ec",
+        "expert2": "a27de3f5533af88ac6be54620f5b9bcfbdd6db2bd256d88c20c5259a12e21a08",
+        "expert3": "bb0190be1a1c5e6fe79594d19d4599d3779592e825657dfd8af7b154ff9e701a",
+        "strict": "631b44299f2a719af4a8f7190e0587f3ac62ff22e4c1efa6c5ee057b9da0144b",
+        "aligned": "3da7d535803977441ad9e5dd866a8e01f1e912b610de003fc32ed31bf1dee376"
+      }
+    },
+    {
+      "example": "symmetric-typical",
+      "task_id": "val::0618::symmetric",
+      "source_photo_sha256": "96f7d24966bcd6f8c6d39948873c9b3a55073db1471fd0f9e06a69a465e38bd6",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "cef065ffd5b052c75aa174f1351b8152b1710c728c7b3569d1886d12231568bc",
+        "expert2": "cef065ffd5b052c75aa174f1351b8152b1710c728c7b3569d1886d12231568bc",
+        "expert3": "cef065ffd5b052c75aa174f1351b8152b1710c728c7b3569d1886d12231568bc",
+        "strict": "cef065ffd5b052c75aa174f1351b8152b1710c728c7b3569d1886d12231568bc",
+        "aligned": "cef065ffd5b052c75aa174f1351b8152b1710c728c7b3569d1886d12231568bc"
+      }
+    },
+    {
+      "example": "symmetric-ambiguous",
+      "task_id": "val::0631::symmetric",
+      "source_photo_sha256": "38fc261c443dd6af52d0bcda6db24a6a0af11ce3ed38c3d30d7e6338dd958244",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "c55d53ad7e26f0d24a4fb99223853c75b674a82846b15c0519ddc91f65d0d8e7",
+        "expert2": "0b6a1dfb11d55cd208f7deb3dc23aed05023c29ef80905be497b609bd79b51b8",
+        "expert3": "f5e97b9222d45b4ef66b9ca4f492da47f6406d6099b661adbd2ebf7512567ca0",
+        "strict": "a96daf1f534ff9ed8517bd97a94d9dd4df8462c154420844163c0e8dc1a2d2db",
+        "aligned": "adf2944916f7ddd22e453a786179bcfb0ccc5330b784b22daec2c79218b3818b"
+      }
+    },
+    {
+      "example": "pattern-typical",
+      "task_id": "val::0637::pattern",
+      "source_photo_sha256": "e7ad740903c44e724673dd2d8f604377416fabdd1184f6698e5dcffe807adf79",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "b5d572aa299128bc6660120912c33fe2f702bcbe01cede7629d0478c6315bf28",
+        "expert2": "b5d572aa299128bc6660120912c33fe2f702bcbe01cede7629d0478c6315bf28",
+        "expert3": "b5d572aa299128bc6660120912c33fe2f702bcbe01cede7629d0478c6315bf28",
+        "strict": "b5d572aa299128bc6660120912c33fe2f702bcbe01cede7629d0478c6315bf28",
+        "aligned": "b5d572aa299128bc6660120912c33fe2f702bcbe01cede7629d0478c6315bf28"
+      }
+    },
+    {
+      "example": "pattern-ambiguous",
+      "task_id": "val::0620::pattern",
+      "source_photo_sha256": "e593fb5de2f3a5ae9434340fe7c02121a6c96e2c28f534277ece7f489ca1855f",
+      "paper_selection": "selection.csv",
+      "rendering": "Resized KU-PCP photograph plus transparent blue overlays from final expert/consensus PNGs; no model prediction or generated image",
+      "mask_sha256": {
+        "expert1": "3b825c51fcb3a738a7499f07d19ddbd4ce98ef95c8b2337f754d3e8f173a06c6",
+        "expert2": "9502e6f8b34a4fe866ab5cda01d048e907eb42dc2b916113d27f87499589f738",
+        "expert3": "38654b936171725b73fe4abf966ba7a0cc8baf32c6a2c5455d493ddc3f0259e4",
+        "strict": "a2013a07628dc093777a9931048aac1c461fa5fde773034b0b45ccbddfba5700",
+        "aligned": "827f91fc4d32858c1cf706aa6c877edc1e70c0a1dfc544c0578250287e9a5b82"
+      }
+    }
+  ],
+  "benchmark_inputs": {
+    "canonical/target_summary.csv": "935b2540f48c7555d7fe92744cd2a3820262a8dcb42821c5e1ff893df91a200d",
+    "cluster_results/matched12/summary.csv": "6221b6a71f7f951ee4e4dc58160937c0ae8cb97ce04d147ae7b2b9bc093b1168"
+  },
+  "source_code_commit": "f846765491fcdbfd144fb613b2b03daa6bfdaba6"
+}

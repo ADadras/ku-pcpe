@@ -1,0 +1,11 @@
+{
+  "src/ku_pcpe/__init__.py": "3643b04307c4757c301be72677d03e212ffe7e182ac1130004a094b14238e6d1",
+  "src/ku_pcpe/baselines.py": "c9bb920370ca7f05d3e6923dbb2da20b98e0db50837e7a303dccd015f147c1c5",
+  "src/ku_pcpe/cache.py": "98caf49228dd267452975b8ad1566a37a08c049ae7206511c36501c0cfaea852",
+  "src/ku_pcpe/cli.py": "f3bb3f554c2cc6357658eb0dcfb8b7f5a9dc04c0be62e72fdb69d68710e6118b",
+  "src/ku_pcpe/data.py": "de89d6ee006cdf644c5a9403698ea49c1261ff5681dfdb6de60c3c1e25cc199c",
+  "src/ku_pcpe/evaluate.py": "00fd5467a1d7e17a5680dc1536d23e8dc487781de037d96adb6d5d31000073d4",
+  "src/ku_pcpe/metrics.py": "dc6ff79588302b18c0b7db63fd495ff4460c0806f05e0dac40d631592c54d267",
+  "src/ku_pcpe/proposals.py": "dc5acfa4b76e6512d0308a69a0c58051f624ead367c0e2542eccad8344c0e1c9",
+  "src/ku_pcpe/validation.py": "174a173ad096a2623072d8c46d4b541ef3fcc419f6235dad9fe4eac4deac288d"
+}
